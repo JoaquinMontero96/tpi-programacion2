@@ -9,19 +9,19 @@ import java.time.LocalDateTime;
 import java.security.SecureRandom;
 
 /**
- *
+ * Usuario
  * @author JOAQUIN
  */
 public class Usuario extends Base {
-    private String nombre;
-    private String apellido;
-    private String mail;
-    private String celular;
-    private String contrasenia;
-    private Rol rol;
-    private static long cantidadUsuarios = 0;
-    private static final String ALFANUMERICO = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    private static final SecureRandom RANDOM = new SecureRandom();
+    private String nombre; /** Nombre de usuario */
+    private String apellido; /** Apellido de usuario */
+    private String mail; /** Email de usuario */
+    private String celular; /** Numero de celular de usuario */
+    private String contrasenia; /** Contraseña de usuario */
+    private Rol rol; /** Rol de usuario */
+    private static long cantidadUsuarios = 0; /** Cantidad de usuarios creados */
+    private static final String ALFANUMERICO = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; /** Caracteres permitidos para contraseña*/
+    private static final SecureRandom RANDOM = new SecureRandom(); /** Generador de contraseñas */
 
     public Usuario(String nombre, String apellido, String mail, String celular, Rol rol) {
         super(cantidadUsuarios + 1, false, LocalDateTime.now());
@@ -64,7 +64,11 @@ public class Usuario extends Base {
     }
     
     
-
+    /**
+     * Genera una contraseña aleatoria
+     * @param longitud Cantidad de caracteres
+     * @return 
+     */ 
     private String generarContrasenia(int longitud) {
         StringBuilder sb = new StringBuilder(longitud);
         

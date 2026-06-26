@@ -7,13 +7,13 @@ package integrado.prog2.entities;
 import java.time.LocalDateTime;
 
 /**
- *
+ * Categoria de producto
  * @author JOAQUIN
  */
 public class Categoria extends Base {
-    private String nombre;
-    private String descripcion;
-    private static long cantidadCategorias = 0;
+    private String nombre; /** Nombre de la categoria */
+    private String descripcion; /** Descripcion de la categoria */
+    private static long cantidadCategorias = 0; /** Cantidad de categorias creadas */
 
     public Categoria(String nombre, String descripcion) {
         super(cantidadCategorias + 1, false, LocalDateTime.now());
@@ -34,8 +34,6 @@ public class Categoria extends Base {
         this.descripcion = descripcion;
     }
     
-    
-
     @Override
     public String toString() {
         return this.getId() + "  -  " + this.nombre + "  -  " + this.descripcion + "  -  " + this.getCreatedAt();

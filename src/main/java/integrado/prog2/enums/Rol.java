@@ -5,7 +5,7 @@
 package integrado.prog2.enums;
 
 /**
- *
+ * Roles
  * @author JOAQUIN
  */
 public enum Rol {

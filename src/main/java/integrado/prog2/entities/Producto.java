@@ -7,18 +7,18 @@ package integrado.prog2.entities;
 import java.time.LocalDateTime;
 
 /**
- *
+ * Producto
  * @author JOAQUIN
  */
 public class Producto extends Base {
-    private String nombre;
-    private double precio;
-    private String descripcion;
-    private int stock;
-    private String imagen;
-    private boolean disponible;
-    private Categoria categoria;
-    private static long cantidadProductos = 0;
+    private String nombre; /** Nombre del producto */
+    private double precio; /** Precio del producto */
+    private String descripcion; /** Descripcion del producto */
+    private int stock; /** Cantidad en stock del producto */
+    private String imagen; /** URL de la imagen del producto */
+    private boolean disponible; /** Estado de disponibilidad del producto */
+    private Categoria categoria; /** Categoria del producto */
+    private static long cantidadProductos = 0; /** Cantidad de productos creados */
 
     public Producto(String nombre, double precio, String descripcion, int stock, String imagen, Categoria categoria, boolean disponible) {
         super(cantidadProductos + 1, false, LocalDateTime.now());

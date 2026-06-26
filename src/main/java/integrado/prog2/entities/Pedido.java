@@ -12,17 +12,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Pedido
  * @author JOAQUIN
  */
 public class Pedido extends Base implements Calculable{
-    private LocalDate fecha;
-    private Estado estado;
-    private double total;
-    private FormaPago formaPago;
-    private List<DetallePedido> detallesPedido = new ArrayList<>();
-    private Usuario usuario;
-    private static long cantidadPedidos = 0;
+    private LocalDate fecha; /** Fecha de creacion */
+    private Estado estado; /** Estado del pedido */
+    private double total; /** Total del pedido */
+    private FormaPago formaPago; /** Forma de pago */
+    private List<DetallePedido> detallesPedido = new ArrayList<>(); /** Listado de detalles de pedido */
+    private Usuario usuario; /** Usuario asociado */
+    private static long cantidadPedidos = 0; /** Cantidad de pedidos creados */
 
     public Pedido(Usuario usuario, LocalDate fecha) {
         super(cantidadPedidos + 1, false, LocalDateTime.now());

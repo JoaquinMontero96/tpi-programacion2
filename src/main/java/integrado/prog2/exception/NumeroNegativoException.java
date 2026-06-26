@@ -5,7 +5,7 @@
 package integrado.prog2.exception;
 
 /**
- *
+ * Excepcion de numeros negativos
  * @author JOAQUIN
  */
 public class NumeroNegativoException extends RuntimeException{

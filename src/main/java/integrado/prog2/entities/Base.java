@@ -7,13 +7,13 @@ package integrado.prog2.entities;
 import java.time.LocalDateTime;
 
 /**
- *
+ * Clase base
  * @author JOAQUIN
  */
 public abstract class Base {
-    private long id;
-    private boolean eliminado;
-    private LocalDateTime createdAt;
+    private long id; /** ID de la entidad */
+    private boolean eliminado; /** Estado de eliminacion */
+    private LocalDateTime createdAt; /** Fecha y hora de creacion */
 
     public Base(long id, boolean eliminado, LocalDateTime createdAt) {
         this.id = id;

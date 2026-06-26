@@ -5,7 +5,7 @@
 package integrado.prog2.exception;
 
 /**
- *
+ * Excepcion de cadenas vacias
  * @author JOAQUIN
  */
 public class CadenaVaciaException extends RuntimeException{

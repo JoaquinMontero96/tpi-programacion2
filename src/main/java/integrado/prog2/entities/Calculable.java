@@ -5,7 +5,7 @@
 package integrado.prog2.entities;
 
 /**
- *
+ * Puede calcular su total
  * @author JOAQUIN
  */
 public interface Calculable {

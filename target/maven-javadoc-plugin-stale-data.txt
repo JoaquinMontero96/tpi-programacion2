@@ -1,0 +1,49 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+25
+-sourcepath
+'C:/Users/JOAQUÍN/Documents/NetBeansProjects/tpi-prog2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/JOAQUÍN/Documents/NetBeansProjects/tpi-prog2/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'tpi-prog2 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'tpi-prog2 1.0-SNAPSHOT API'
+integrado.prog2.entities
+integrado.prog2.enums
+integrado.prog2.exception
+integrado.prog2
+integrado.prog2.service
+integrado.prog2.ui
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\src\main\java = 1782098450101
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\allclasses-index.html = 1782440369496
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\allpackages-index.html = 1782440369500
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\element-list = 1782440368965
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\help-doc.html = 1782440369596
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\index-all.html = 1782440369562
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\index.html = 1782440369454
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\member-search-index.js = 1782440369521
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\module-search-index.js = 1782440369502
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\overview-summary.html = 1782440369577
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\overview-tree.html = 1782440369446
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\package-search-index.js = 1782440369504
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\search.html = 1782440369571
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\serialized-form.html = 1782440369155
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\tag-search-index.js = 1782440369523
+C:\Users\JOAQUÍN\Documents\NetBeansProjects\tpi-prog2\target\reports\apidocs\type-search-index.js = 1782440369519

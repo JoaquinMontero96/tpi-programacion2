@@ -10,12 +10,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Gestion de productos
  * @author JOAQUIN
  */
 public class ProductoService {
-    List<Producto> productos = new ArrayList<>();
+    List<Producto> productos = new ArrayList<>(); /** Listado de productos */
     
+    /**
+     * Lista los productos creados
+     */
     public void listarTodos() {
         if (productos.isEmpty()) {
             System.out.println("=====================================");
@@ -30,6 +33,16 @@ public class ProductoService {
         }
     }
     
+    /**
+     * Crea un producto y lo agrega al listado
+     * @param nombre Nombre
+     * @param precio Precio
+     * @param descripcion Descripcion
+     * @param stock Cantidad de stock
+     * @param imagen URL de imagen
+     * @param categoria Categoria
+     * @param isDisponible Estado de disponibilidad
+     */
     public void crearProducto(String nombre, double precio, String descripcion, int stock, String imagen, Categoria categoria, boolean isDisponible){
         Producto nuevoProducto = new Producto(nombre, precio, descripcion, stock, imagen, categoria, isDisponible);
         productos.add(nuevoProducto);
@@ -38,6 +51,11 @@ public class ProductoService {
         System.out.println("=====================================");
     }
     
+    /**
+     * Busca un producto por su ID
+     * @param id ID del producto
+     * @return Producto buscado
+     */
     public Producto buscarProductoPorId(long id) {
         Producto productoBuscado = null;
         for (Producto producto : productos) {
@@ -48,18 +66,37 @@ public class ProductoService {
         return productoBuscado;
     }
     
+    /**
+     * Actualiza el precio de un producto
+     * @param precio Nuevo precio
+     * @param producto Producto
+     */
     public void actualizarPrecio(double precio, Producto producto) {
         producto.setPrecio(precio);
     }
     
+    /**
+     * Actualiza el stock de un producto
+     * @param stock Nuevo stock
+     * @param producto Producto
+     */
     public void actualizarStock(int stock, Producto producto) {
         producto.setStock(stock);
     }
     
+    /**
+     * Actualiza la categoria de un producto
+     * @param categoria Nueva categoria
+     * @param producto Producto
+     */
     public void actualizarCategoria(Categoria categoria, Producto producto) {
         producto.setCategoria(categoria);
     }
     
+    /**
+     * Cambia de estado eliminado a un producto
+     * @param producto Producto a eliminar
+     */
     public void eliminarProducto(Producto producto){
         producto.setEliminado(true);
     }

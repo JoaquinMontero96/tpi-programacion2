@@ -5,7 +5,7 @@
 package integrado.prog2.enums;
 
 /**
- *
+ * Formas de pago
  * @author JOAQUIN
  */
 public enum FormaPago {

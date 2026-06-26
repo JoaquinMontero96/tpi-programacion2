@@ -9,12 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Gestion de Categorias
  * @author JOAQUIN
  */
 public class CategoriaService {
-    List<Categoria> categorias = new ArrayList<>();
+    List<Categoria> categorias = new ArrayList<>(); /** Lista de categorias */
     
+    /**
+     * Lista todas las categorias creadas
+     */
     public void listarTodos() {
         if (categorias.isEmpty()) {
             System.out.println("=====================================");
@@ -32,6 +35,11 @@ public class CategoriaService {
         }
     }
     
+    /**
+     * Crea una categoria y la agrega al listado
+     * @param nombre Nombre de categoria
+     * @param descripcion Descripcion de categoria
+     */
     public void crearCategoria(String nombre, String descripcion) {          
         Categoria nuevaCategoria = new Categoria(nombre, descripcion);
         categorias.add(nuevaCategoria);
@@ -40,6 +48,11 @@ public class CategoriaService {
         System.out.println("=====================================");
     }
     
+    /**
+     * Busca una categoria por su nombre
+     * @param nombre Nombre de categoria
+     * @return Categoria buscada
+     */
     public Categoria buscarCategoriaPorNombre(String nombre) {
         Categoria categoriaBuscada = null;
         for (Categoria categoria : categorias) {
@@ -50,6 +63,11 @@ public class CategoriaService {
         return categoriaBuscada;
     }
     
+    /**
+     * Busca una categoria por su ID
+     * @param id ID de categoria
+     * @return Categoria buscada
+     */
     public Categoria buscarCategoriaPorId(long id) {
         Categoria categoriaBuscada = null;
         for (Categoria categoria : categorias) {
@@ -60,14 +78,28 @@ public class CategoriaService {
         return categoriaBuscada;
     }
     
+    /**
+     * Actualiza el nombre de una categoria
+     * @param categoria Categoria a actualizar
+     * @param nombre Nuevo nombre
+     */
     public void cambiarNombreCategoria(Categoria categoria, String nombre) {
         categoria.setNombre(nombre);
     }
     
+    /**
+     * Actualiza la descripcion de una categoria
+     * @param categoria Categoria a actualizar
+     * @param descripcion Nueva descripcion
+     */
     public void cambiarDescripcionCategoria(Categoria categoria, String descripcion) {
         categoria.setNombre(descripcion);
     }
     
+    /**
+     * Cambia el estado a eliminado de uan categoria
+     * @param categoria 
+     */
     public void eliminarCategoria(Categoria categoria){
         categoria.setEliminado(true);
     }

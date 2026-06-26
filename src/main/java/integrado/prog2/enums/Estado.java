@@ -5,7 +5,7 @@
 package integrado.prog2.enums;
 
 /**
- *
+ * Estados posibles del pedido
  * @author JOAQUIN
  */
 public enum Estado {
